@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="row">
-            <div class="large-12 column">
+            <div class="small-12 medium-12 large-12 column">
                 <ul class="accordion" data-accordion role="tablist">
                     <li class="accordion-item is-active">
                         <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
