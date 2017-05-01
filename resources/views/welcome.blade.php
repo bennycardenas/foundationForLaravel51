@@ -1,11 +1,45 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel/Foundation</title>
+@extends('master')
 
-        <link rel="stylesheet" type="text/css" href="{{ elixir('css/foundation.css') }}" />
+@section('title')
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        {{-- Add the new slick-theme.css if you want the default styling --}}
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
-    <body>
+@stop
+
+@section('content')
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 column">
+            <div class="callout">
+                <h5>This is a callout.</h5>
+                <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                <a href="#">It's dangerous to go alone, take this.</a>
+            </div>
+        </div>
+    </div>
+@endsection
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script TYPE="text/javascript">
+    $(document).ready(function(){
+    $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+</script>
+
+    {{-- {{-- ORIGINAL CONTENT FOLLOWS --}}
         <div class="row">
             <div class="small-12 medium-12 large-12 column">
                 <ul class="accordion" data-accordion role="tablist">
@@ -305,10 +339,4 @@
                 <i class="fi-info"></i>
                 <i class="fi-clipboard"></i>
             </div>
-        </div>
-        <script type="text/javascript" src="{{ elixir('js/foundation.js') }}"></script>
-        <script type="text/javascript">
-            $(document).foundation();
-        </script>
-    </body>
-</html>
+        </div> --}}
